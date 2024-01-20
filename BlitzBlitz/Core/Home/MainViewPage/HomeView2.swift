@@ -16,7 +16,7 @@ struct HomeView2: View {
                 /*Color(hex: "#ADD8E6")
                     .ignoresSafeArea()
                  */
-                //MapView()
+                MapView()
                 ZStack{
                     Color.white
                         .cornerRadius(60)

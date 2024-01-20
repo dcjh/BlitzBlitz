@@ -42,6 +42,9 @@
 		C9D0EA852B5C413F00518DA8 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C9D0EA842B5C413F00518DA8 /* FirebaseFirestoreCombine-Community */; };
 		C9D0EA872B5C413F00518DA8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9D0EA862B5C413F00518DA8 /* FirebaseFirestoreSwift */; };
 		C9D0EA892B5C413F00518DA8 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = C9D0EA882B5C413F00518DA8 /* FirebaseFunctions */; };
+		C9D0EA902B5C429E00518DA8 /* StudyMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA8F2B5C429E00518DA8 /* StudyMapViewRepresentable.swift */; };
+		C9D0EA922B5C42B600518DA8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA912B5C42B600518DA8 /* LocationManager.swift */; };
+		C9D0EA942B5C42F200518DA8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA932B5C42F200518DA8 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		C9D0EA122B5C3D2E00518DA8 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		C9D0EA182B5C3D2E00518DA8 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		C9D0EA1A2B5C3D2E00518DA8 /* CurrentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentView.swift; sourceTree = "<group>"; };
+		C9D0EA8F2B5C429E00518DA8 /* StudyMapViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyMapViewRepresentable.swift; sourceTree = "<group>"; };
+		C9D0EA912B5C42B600518DA8 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C9D0EA932B5C42F200518DA8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		C9D0E9E72B5C3B4200518DA8 /* BlitzBlitz */ = {
 			isa = PBXGroup;
 			children = (
+				C9D0EA8A2B5C41EC00518DA8 /* Map */,
 				C9D0E9F82B5C3D2E00518DA8 /* Core */,
 				C9D0EA022B5C3D2E00518DA8 /* App */,
 				C9D0EA042B5C3D2E00518DA8 /* LoginPage */,
@@ -152,6 +159,7 @@
 		C9D0E9FA2B5C3D2E00518DA8 /* MainViewPage */ = {
 			isa = PBXGroup;
 			children = (
+				C9D0EA932B5C42F200518DA8 /* MapView.swift */,
 				C9D0E9FB2B5C3D2E00518DA8 /* HomeView2.swift */,
 				C9D0E9FC2B5C3D2E00518DA8 /* BottomBarView.swift */,
 			);
@@ -250,6 +258,39 @@
 				C9D0EA1A2B5C3D2E00518DA8 /* CurrentView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		C9D0EA8A2B5C41EC00518DA8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0EA8B2B5C421C00518DA8 /* Core */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C9D0EA8B2B5C421C00518DA8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0EA8E2B5C427300518DA8 /* Views */,
+				C9D0EA8C2B5C422200518DA8 /* Managers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C9D0EA8C2B5C422200518DA8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0EA912B5C42B600518DA8 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C9D0EA8E2B5C427300518DA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0EA8F2B5C429E00518DA8 /* StudyMapViewRepresentable.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,12 +392,15 @@
 				C9D0EA262B5C3D2E00518DA8 /* RegistrationView.swift in Sources */,
 				C9D0EA292B5C3D2E00518DA8 /* InputView.swift in Sources */,
 				C9D0EA232B5C3D2E00518DA8 /* ProfileView.swift in Sources */,
+				C9D0EA942B5C42F200518DA8 /* MapView.swift in Sources */,
 				C9D0EA1C2B5C3D2E00518DA8 /* HomeView2.swift in Sources */,
+				C9D0EA902B5C429E00518DA8 /* StudyMapViewRepresentable.swift in Sources */,
 				C9D0EA272B5C3D2E00518DA8 /* LoginView.swift in Sources */,
 				C9D0EA222B5C3D2E00518DA8 /* StudyTestApp.swift in Sources */,
 				C9D0EA2D2B5C3D2E00518DA8 /* ColorExtension.swift in Sources */,
 				C9D0EA2E2B5C3D2E00518DA8 /* CurrentView.swift in Sources */,
 				C9D0EA1D2B5C3D2E00518DA8 /* BottomBarView.swift in Sources */,
+				C9D0EA922B5C42B600518DA8 /* LocationManager.swift in Sources */,
 				C9D0EA282B5C3D2E00518DA8 /* SettingsRowView.swift in Sources */,
 				C9D0EA252B5C3D2E00518DA8 /* User.swift in Sources */,
 				C9D0EA242B5C3D2E00518DA8 /* AuthViewModel.swift in Sources */,
