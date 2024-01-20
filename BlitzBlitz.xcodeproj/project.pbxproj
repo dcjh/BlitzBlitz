@@ -144,18 +144,18 @@
 		C9D0E9F92B5C3D2E00518DA8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C9D0E9FA2B5C3D2E00518DA8 /* New Group */,
+				C9D0E9FA2B5C3D2E00518DA8 /* MainViewPage */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		C9D0E9FA2B5C3D2E00518DA8 /* New Group */ = {
+		C9D0E9FA2B5C3D2E00518DA8 /* MainViewPage */ = {
 			isa = PBXGroup;
 			children = (
 				C9D0E9FB2B5C3D2E00518DA8 /* HomeView2.swift */,
 				C9D0E9FC2B5C3D2E00518DA8 /* BottomBarView.swift */,
 			);
-			path = "New Group";
+			path = MainViewPage;
 			sourceTree = "<group>";
 		};
 		C9D0EA022B5C3D2E00518DA8 /* App */ = {
