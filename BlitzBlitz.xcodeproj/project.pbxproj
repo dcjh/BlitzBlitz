@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9D0E9E92B5C3B4200518DA8 /* BlitzBlitzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0E9E82B5C3B4200518DA8 /* BlitzBlitzApp.swift */; };
-		C9D0E9EB2B5C3B4200518DA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0E9EA2B5C3B4200518DA8 /* ContentView.swift */; };
 		C9D0E9ED2B5C3B4300518DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D0E9EC2B5C3B4300518DA8 /* Assets.xcassets */; };
 		C9D0E9F02B5C3B4300518DA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D0E9EF2B5C3B4300518DA8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9D0E9E52B5C3B4200518DA8 /* BlitzBlitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzBlitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9D0E9E82B5C3B4200518DA8 /* BlitzBlitzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzBlitzApp.swift; sourceTree = "<group>"; };
-		C9D0E9EA2B5C3B4200518DA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9D0E9EC2B5C3B4300518DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D0E9EF2B5C3B4300518DA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +47,6 @@
 		C9D0E9E72B5C3B4200518DA8 /* BlitzBlitz */ = {
 			isa = PBXGroup;
 			children = (
-				C9D0E9E82B5C3B4200518DA8 /* BlitzBlitzApp.swift */,
-				C9D0E9EA2B5C3B4200518DA8 /* ContentView.swift */,
 				C9D0E9EC2B5C3B4300518DA8 /* Assets.xcassets */,
 				C9D0E9EE2B5C3B4300518DA8 /* Preview Content */,
 			);
@@ -137,8 +131,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D0E9EB2B5C3B4200518DA8 /* ContentView.swift in Sources */,
-				C9D0E9E92B5C3B4200518DA8 /* BlitzBlitzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
