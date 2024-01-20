@@ -24,7 +24,9 @@ struct StudyMapViewRepresentable: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+        if let coordinate = /*input variable with 3 alternating location*/ {
+            context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
+        }
     }
     
     func makeCoordinator() -> MapCoordinator {
@@ -57,7 +59,12 @@ extension StudyMapViewRepresentable {
         
         //HELPERS
         func addAndSelectAnnotation(withCoordinate coordinate: CLLocationCoordinate2D) {
-            
+            parent.mapView.removeAnnotations(parent.mapView.annotations)
+            let anno = MKPointAnnotation()
+            anno.coordinate = coordinate
+            parent.mapView.addAnnotation(anno)
+            parent.mapView.selectAnnotation(anno, animated: true)
+            parent.mapView.showAnnotations(parent.mapView.annotations, animated: true)
         }
         
     }
