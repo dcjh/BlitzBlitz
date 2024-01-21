@@ -45,6 +45,10 @@
 		C9D0EA902B5C429E00518DA8 /* StudyMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA8F2B5C429E00518DA8 /* StudyMapViewRepresentable.swift */; };
 		C9D0EA922B5C42B600518DA8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA912B5C42B600518DA8 /* LocationManager.swift */; };
 		C9D0EA942B5C42F200518DA8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA932B5C42F200518DA8 /* MapView.swift */; };
+		C9D0EA972B5C788500518DA8 /* StudyMap2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA962B5C788400518DA8 /* StudyMap2.swift */; };
+		C9D0EA992B5C789900518DA8 /* StudyMap3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA982B5C789900518DA8 /* StudyMap3.swift */; };
+		C9D0EA9B2B5C7DCE00518DA8 /* MapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA9A2B5C7DCE00518DA8 /* MapView2.swift */; };
+		C9D0EA9D2B5C7E1600518DA8 /* MapView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA9C2B5C7E1600518DA8 /* MapView3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,10 @@
 		C9D0EA8F2B5C429E00518DA8 /* StudyMapViewRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyMapViewRepresentable.swift; sourceTree = "<group>"; };
 		C9D0EA912B5C42B600518DA8 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C9D0EA932B5C42F200518DA8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C9D0EA962B5C788400518DA8 /* StudyMap2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMap2.swift; sourceTree = "<group>"; };
+		C9D0EA982B5C789900518DA8 /* StudyMap3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMap3.swift; sourceTree = "<group>"; };
+		C9D0EA9A2B5C7DCE00518DA8 /* MapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView2.swift; sourceTree = "<group>"; };
+		C9D0EA9C2B5C7E1600518DA8 /* MapView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				C9D0EA932B5C42F200518DA8 /* MapView.swift */,
+				C9D0EA9A2B5C7DCE00518DA8 /* MapView2.swift */,
+				C9D0EA9C2B5C7E1600518DA8 /* MapView3.swift */,
 				C9D0E9FB2B5C3D2E00518DA8 /* HomeView2.swift */,
 				C9D0E9FC2B5C3D2E00518DA8 /* BottomBarView.swift */,
 			);
@@ -289,6 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				C9D0EA8F2B5C429E00518DA8 /* StudyMapViewRepresentable.swift */,
+				C9D0EA962B5C788400518DA8 /* StudyMap2.swift */,
+				C9D0EA982B5C789900518DA8 /* StudyMap3.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -389,9 +401,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D0EA9B2B5C7DCE00518DA8 /* MapView2.swift in Sources */,
+				C9D0EA9D2B5C7E1600518DA8 /* MapView3.swift in Sources */,
 				C9D0EA262B5C3D2E00518DA8 /* RegistrationView.swift in Sources */,
 				C9D0EA292B5C3D2E00518DA8 /* InputView.swift in Sources */,
 				C9D0EA232B5C3D2E00518DA8 /* ProfileView.swift in Sources */,
+				C9D0EA992B5C789900518DA8 /* StudyMap3.swift in Sources */,
+				C9D0EA972B5C788500518DA8 /* StudyMap2.swift in Sources */,
 				C9D0EA942B5C42F200518DA8 /* MapView.swift in Sources */,
 				C9D0EA1C2B5C3D2E00518DA8 /* HomeView2.swift in Sources */,
 				C9D0EA902B5C429E00518DA8 /* StudyMapViewRepresentable.swift in Sources */,

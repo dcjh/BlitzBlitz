@@ -11,8 +11,8 @@ struct MapView: View {
     var body: some View {
         StudyMapViewRepresentable()
             .ignoresSafeArea()
-            .frame(width: 393, height: 290, alignment: .top)
-            .padding(.bottom, UIScreen.main.bounds.height - 290)
+            .frame(width: 393, height: 290)
+            .padding(.bottom, UIScreen.main.bounds.height - 351)
         
     }
 }

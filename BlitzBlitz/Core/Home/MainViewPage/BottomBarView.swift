@@ -41,7 +41,9 @@ struct BottomBarView: View {
                 .padding(.vertical)
                 .padding(.bottom, getSafeArea().bottom == 0 ? 5 : (getSafeArea().bottom - 15))
                 .foregroundColor(Color.black)
-                .background(Color.white)
+                .background(Color.white
+                    .shadow(color: Color.black, radius:4, x:0, y:0)
+                    .mask(Rectangle().padding(.top,-20)))
             }
             ,
             alignment: .bottom
@@ -61,13 +63,13 @@ struct BottomBarView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 25, height: 25)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(currentTab == tab ? Color(hex:"FFB700") : .yellow)
+                        .foregroundColor(currentTab == tab ? Color(hex:"797EF6") : Color(hex:"CBC3E3"))
                         .background(
                             ZStack{
                             if currentTab == tab{
-                                MaterialEffect(style: .light)
-                                    .clipShape(Circle())
-                                    .matchedGeometryEffect(id: "TAB", in: animation)
+                                /*MaterialEffect(style: .light)
+                                    //.clipShape(Circle())
+                                    .matchedGeometryEffect(id: "TAB", in: animation)*/
                                 Text(tab.tabName)
                                     .font(.footnote).padding(.top, 50)
                             }

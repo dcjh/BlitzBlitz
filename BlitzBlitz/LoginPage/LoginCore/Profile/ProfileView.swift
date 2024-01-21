@@ -8,10 +8,10 @@ struct ProfileView: View {
             VStack(alignment: .leading) {
                 HStack{
                     Text(user.fullname)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(.white)
                         .padding(13)
                         .font(.system(size: 23, weight: .semibold, design: .default))
-                        .background(Color(hex: "FFB700"))
+                        .background(Color(hex: "797EF6"))
                         .clipShape(Capsule())
                         .offset(x: 30, y: 20)
                     Spacer()
