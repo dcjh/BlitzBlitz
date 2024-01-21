@@ -23,7 +23,7 @@ struct BottomBarView: View {
                 //.background(Color("bg").ignoresSafeArea())
                 .tag(Tab.Home)
             
-            Text("Chat View")
+            MessgeView()
                 //.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
                 //.background(Color("bg").ignoresSafeArea())
                 .tag(Tab.Chat)

@@ -49,6 +49,7 @@
 		C9D0EA992B5C789900518DA8 /* StudyMap3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA982B5C789900518DA8 /* StudyMap3.swift */; };
 		C9D0EA9B2B5C7DCE00518DA8 /* MapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA9A2B5C7DCE00518DA8 /* MapView2.swift */; };
 		C9D0EA9D2B5C7E1600518DA8 /* MapView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EA9C2B5C7E1600518DA8 /* MapView3.swift */; };
+		C9D0EAA52B5CCECE00518DA8 /* MessgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D0EAA42B5CCECE00518DA8 /* MessgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		C9D0EA982B5C789900518DA8 /* StudyMap3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMap3.swift; sourceTree = "<group>"; };
 		C9D0EA9A2B5C7DCE00518DA8 /* MapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView2.swift; sourceTree = "<group>"; };
 		C9D0EA9C2B5C7E1600518DA8 /* MapView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView3.swift; sourceTree = "<group>"; };
+		C9D0EAA42B5CCECE00518DA8 /* MessgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				C9D0EA9C2B5C7E1600518DA8 /* MapView3.swift */,
 				C9D0E9FB2B5C3D2E00518DA8 /* HomeView2.swift */,
 				C9D0E9FC2B5C3D2E00518DA8 /* BottomBarView.swift */,
+				C9D0EAA42B5CCECE00518DA8 /* MessgeView.swift */,
 			);
 			path = MainViewPage;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				C9D0EA292B5C3D2E00518DA8 /* InputView.swift in Sources */,
 				C9D0EA232B5C3D2E00518DA8 /* ProfileView.swift in Sources */,
 				C9D0EA992B5C789900518DA8 /* StudyMap3.swift in Sources */,
+				C9D0EAA52B5CCECE00518DA8 /* MessgeView.swift in Sources */,
 				C9D0EA972B5C788500518DA8 /* StudyMap2.swift in Sources */,
 				C9D0EA942B5C42F200518DA8 /* MapView.swift in Sources */,
 				C9D0EA1C2B5C3D2E00518DA8 /* HomeView2.swift in Sources */,

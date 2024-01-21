@@ -27,17 +27,17 @@ struct ProfileView: View {
                 HStack{
                     Text("Bio")
                         .foregroundStyle(.black)
-                        //.padding(13)
+                    //.padding(13)
                         .font(.system(size: 23, weight: .regular, design: .default))
                         .offset(x: 30)
                 }
                 Text(user.bio)
                     .offset(x: 30)
                     .padding(.top, 15)
-                    .frame(width: 330)
+                   // .frame(width: 330)
                     .multilineTextAlignment(.trailing)
                     .lineLimit(3)
-                    
+                
                 Divider()
                     .overlay(.black)
                 ScrollView {
@@ -46,35 +46,36 @@ struct ProfileView: View {
                             
                             Text("Name")
                             Text(user.fullname)
-                                .textFieldStyle(OrangeTextFieldBackground())
-                                .frame(width: 280)
-                            
-                            Text("Birthdate")
-                            Text(user.birthdate)
-                            //DateView()
-                                .textFieldStyle(OrangeTextFieldBackground())
-                                .frame(width: 280)
-                            
-                            Text("Gender")
-                            Text(user.gender)
-                                .textFieldStyle(OrangeTextFieldBackground())
-                                .frame(width: 280)
+                                    .textFieldStyle(OrangeTextFieldBackground())
+                                    //.frame(width: 280)
+                                
+                                Text("Birthdate")
+                                Text(user.birthdate)
+                                //DateView()
+                                    .textFieldStyle(OrangeTextFieldBackground())
+                                    //.frame(width: 280)
+                                
+                                Text("Gender")
+                                Text(user.gender)
+                                    .textFieldStyle(OrangeTextFieldBackground())
+                                    //.frame(width: 280)
+                                Spacer()
+                                
+                                
+                            }.offset(x: 30, y: 10)
                             Spacer()
-                            
-                            
-                        }.offset(x: 30, y: 10)
-                        Spacer()
+                        }
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 400)
+                    
+                    Button ("Sign out"){
+                        viewModel.signOut()
                     }
                 }
-                .frame(maxWidth: .infinity, maxHeight: 400)
-
-                Button ("Sign out"){
-                    viewModel.signOut()
-                }
-            }
             }
         }
     }
+
 
 struct OrangeTextFieldBackground: TextFieldStyle {
     

@@ -22,22 +22,22 @@ struct HomeView2: View {
                 Color(hex:"f6f6f6")
                 
                 
-                if hideView {
-                    if !textSwitch2{
+                if hideView && !textSwitch2 {
                         MapView()
                             .onAppear {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                     self.textSwitch2.toggle()
+                                    textSwitch2 = true
                                 }
                             }
-                    } else{
-                        MapView2()
-                    }
                 }
-                else{
+                else if !hideView && !textSwitch2 {
                     MapView()
                 }
                 //MapView3()
+                else{
+                    MapView2()
+                }
                 
                 ZStack{ //Top Box
                     HStack{
@@ -75,7 +75,7 @@ struct HomeView2: View {
                                 .font(.system(size: 19, weight: .semibold, design: .default))
                             //.frame(width: 186, height: 30)
                                 .padding(.bottom, 20)
-                                .padding(.top,60)
+                                .padding(.top,160)
                             
                             Button{
                                 hideView = true
@@ -94,8 +94,8 @@ struct HomeView2: View {
                             Spacer()
                         }
                     } else{
-                        VStack {
-                            if !textSwitch {
+                            if !textSwitch && hideView {
+                                VStack {
                                 Image(systemName: "flashlight.off.fill")
                                     .resizable()
                                     .foregroundColor(.gray)
@@ -108,17 +108,43 @@ struct HomeView2: View {
                                     .padding(20)
                                     .foregroundColor(.black)
                                     .font(.system(size: 20, weight: .semibold, design: .default))
+                            }
+                                .onAppear {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                                        self.textSwitch.toggle()
+                                    }
+                                }
+                                .offset(y: -55)
                             } else {
-                                Text("YOOO")
+                                VStack(spacing: 30){
+                                    Image(systemName: "person.crop.square")
+                                        .resizable()
+                                        .frame(width: 300, height : 330)
+                                        .foregroundStyle(Color.gray)
+                                    HStack{
+                                        Text("Darrick Chew")
+                                            .font(.system(size: 25, weight: .semibold, design: .default))
+                                            .padding(.horizontal)
+                                        
+                                        Button{
+                                            hideView = true
+                                        } label: {
+                                            Text("Message Now")
+                                                .padding(.horizontal,20)
+                                                .padding(.vertical, 15)
+                                                .background(Color(hex:"797EF6"))
+                                                .foregroundColor(.white)
+                                                .cornerRadius(10)
+                                                .font(.system(size: 15, weight: .semibold, design: .default))
+                                        }
+                                        
+                                        Spacer()
+                                    }.offset(x:20)
+                                    Spacer()
+                                }
+                                .offset(y:40)
                             }
 
-                        }
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                                self.textSwitch.toggle()
-                            }
-                        }
-                        .offset(y: -55)
                         
                     }
                 }

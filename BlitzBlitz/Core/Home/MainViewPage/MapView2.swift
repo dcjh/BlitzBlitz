@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MapView2: View {
+    
     var body: some View {
         StudyMapViewRepresentable2()
             .ignoresSafeArea()
