@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BottomBarView: View {
     @State var currentTab: Tab = .Home
+
     
     init(){
         UITabBar.appearance().isHidden = true

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MessgeView: View {
-    @State var messageContent = "Owen"
+    @State private var messageContent: String = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
             ZStack{
@@ -42,15 +43,24 @@ struct MessgeView: View {
                 .padding(.bottom, UIScreen.main.bounds.height - 102)
                 VStack{
                     //TextField(title: "Type your message here", text: $messageContent)
-                    Text("Enter message here")
+//                    Text("Enter message here")
+//                        .frame(maxWidth: .infinity)
+//                        .background(Color(.systemGray3))
+//                        .offset(y:325)
+
+                    TextField("Enter message", text:$messageContent)
+                        .padding(15)
                         .frame(maxWidth: .infinity)
-                        .background(Color(.systemGray3))
-                        .offset(y:325)
+                                            .background(Color(.systemGray4))
+                                            .offset(y:325)
+                                         
                 }
             }
         
     }
 }
+
+
 
 #Preview {
     MessgeView()
