@@ -59,6 +59,10 @@ struct ProfileView: View {
                                 Text(user.gender)
                                     .textFieldStyle(OrangeTextFieldBackground())
                                     //.frame(width: 280)
+                            
+                                Button ("Sign out"){
+                                    viewModel.signOut()
+                                }
                                 Spacer()
                                 
                                 
@@ -68,9 +72,7 @@ struct ProfileView: View {
                     }
                     .frame(maxWidth: .infinity, maxHeight: 400)
                     
-                    Button ("Sign out"){
-                        viewModel.signOut()
-                    }
+                    
                 }
             }
         }
